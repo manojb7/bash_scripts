@@ -1,0 +1,2 @@
+--> docker run --name webapp nginx:1.14-alpine  # run the image of nginx and name it as webapp
+

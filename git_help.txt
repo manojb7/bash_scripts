@@ -1,0 +1,21 @@
+-->git init /path/to/directory
+-->git init --bare /path/to/directory  # This will be used in big projects where many branches are coming from different people. This does not contain a working area; and it is better to use ".git" extension at the end to the directory name
+-->git config --global user.name "Manoj B" "
+-->git config --global user.email "manojb@gmail.com"
+-->git config --list
+-->git config --global core.editor "/usr/bin/vim"
+-->Above configurations are saved under home directory of user with name ".gitconfig"
+-->for local project email, you could use , 'git config ser.email "manojb@example.com"'
+-->git config --list # would list the user details
+-->git add <file_name> # adding a file to git staging area
+-->git status -s --> will show status in short way
+-->git is not cencerned about the empty directory
+-->git rm <file_name> # will remove the file from git.If no changes there, file itself will be deleted.To avoid this "--cached" option should be used
+-->git status -s command : if the letters are there like(AM), it denotes the first as staged(add) ,and second as unstaged(modified)
+-->If the content is modified, then the file should be added again to git
+-->git status -v # will give more verbose output
+-->git commit -a -m "message" # commit a modified file in the staging area, in secnod time
+-->.gitignore file contains the file patterns that to be ignored while uploading to git. .gitignore file should be added to git first
+--> git check-ignore *~ # used to debug git ignore to see what is and not being excluded from git
+
+
